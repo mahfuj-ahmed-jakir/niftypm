@@ -1,0 +1,22 @@
+#nifty_left {
+  .head {
+    margin-bottom: 30px;
+    h1 {
+      font-size: 35px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 17px;
+      color: #020202;
+    }
+  }
+  .items {
+    display: flex;
+    .tab_marker {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      background: #020202;
+    }
+  }
+}

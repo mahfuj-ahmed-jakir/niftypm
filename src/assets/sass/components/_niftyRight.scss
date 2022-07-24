@@ -1,0 +1,202 @@
+#ring {
+  .ring {
+    height: 560px;
+    width: 560px;
+    background: none;
+    border: 1px dashed #303030;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    .brand_ring {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .round_one {
+        background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+        height: 430px;
+        width: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+        .round_two {
+          background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+          height: 300px;
+          width: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+          -webkit-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+          -moz-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+          .round_three {
+            background: #f1ffff;
+            height: 180px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border: 1px dashed #707070;
+            position: relative;
+            img {
+              height: 50%;
+              width: 50%;
+            }
+            .three_img {
+              position: absolute;
+            }
+            .role {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              top: -65px;
+              left: 50%;
+              background: #ffffff;
+              padding: 5px;
+              transform: translateX(-50%);
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              border-radius: 50px;
+              -webkit-border-radius: 50px;
+              -moz-border-radius: 50px;
+              -ms-border-radius: 50px;
+              -o-border-radius: 50px;
+              img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+              h5 {
+                font-size: 14px;
+                margin-left: 5px;
+                font-weight: 500;
+                width: max-content;
+                margin-right: 5px;
+                color: #101010;
+              }
+            }
+            .role:nth-child(2) {
+              top: 50%;
+              left: -165px;
+              transform: translateY(-50%);
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+            }
+            .role:nth-child(3) {
+              top: 50%;
+              left: 195px;
+              transform: translateY(-50%);
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+            }
+            .role:nth-child(4) {
+              top: 210px;
+              left: 210px;
+            }
+            .role:nth-child(5) {
+              top: 210px;
+              left: -20px;
+            }
+            .circle {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100px;
+              width: 100px;
+              background: none;
+              animation: circle 5s infinite alternate;
+              -webkit-animation: circle 5s infinite alternate;
+              .round_icon {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin-left: 555%;
+                margin-top: 0%;
+                z-index: 999;
+                background: #202020;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+              .round_icon:nth-child(2) {
+                margin-left: 530%;
+                margin-top: 180%;
+              }
+              .round_icon:nth-child(3) {
+                margin-left: 435%;
+                margin-top: 350%;
+              }
+              .round_icon:nth-child(4) {
+                margin-left: 270%;
+                margin-top: 490%;
+              }
+              .round_icon:nth-child(5) {
+                margin-left: 95%;
+                margin-top: 555%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes circle {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,15 @@
+#nifty {
+  background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+  padding: 75px 50px;
+  margin: 60px 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  .nifty {
+    display: grid;
+    grid-template-columns: 460px 560px;
+    grid-column-gap: 120px;
+  }
+}

@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.55;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h5,
+h6,
+label,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+#nifty {
+  background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+  padding: 75px 50px;
+  margin: 60px 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#nifty .nifty {
+  display: grid;
+  grid-template-columns: 460px 560px;
+  grid-column-gap: 120px;
+}
+
+#nifty_left .head {
+  margin-bottom: 30px;
+}
+#nifty_left .head h1 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+#nifty_left .head p {
+  font-size: 17px;
+  color: #020202;
+}
+#nifty_left .items {
+  display: flex;
+}
+#nifty_left .items .tab_marker {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background: #020202;
+}
+
+#ring .ring {
+  height: 560px;
+  width: 560px;
+  background: none;
+  border: 1px dashed #303030;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#ring .ring .brand_ring {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ring .ring .brand_ring .round_one {
+  background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+  height: 430px;
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+}
+#ring .ring .brand_ring .round_one .round_two {
+  background: linear-gradient(108.3deg, #fdf9fa 7.99%, rgba(204, 240, 235, 0.25) 58.21%);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.15);
+}
+#ring .ring .brand_ring .round_one .round_two .round_three {
+  background: #f1ffff;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px dashed #707070;
+  position: relative;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three img {
+  height: 50%;
+  width: 50%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .three_img {
+  position: absolute;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  background: #ffffff;
+  padding: 5px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role h5 {
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: 500;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 5px;
+  color: #101010;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role:nth-child(2) {
+  top: 50%;
+  left: -165px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role:nth-child(3) {
+  top: 50%;
+  left: 195px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role:nth-child(4) {
+  top: 210px;
+  left: 210px;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .role:nth-child(5) {
+  top: 210px;
+  left: -20px;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background: none;
+  animation: circle 5s infinite alternate;
+  -webkit-animation: circle 5s infinite alternate;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: 555%;
+  margin-top: 0%;
+  z-index: 999;
+  background: #202020;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon:nth-child(2) {
+  margin-left: 530%;
+  margin-top: 180%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon:nth-child(3) {
+  margin-left: 435%;
+  margin-top: 350%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon:nth-child(4) {
+  margin-left: 270%;
+  margin-top: 490%;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon:nth-child(5) {
+  margin-left: 95%;
+  margin-top: 555%;
+}
+
+@-webkit-keyframes circle {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+
+@keyframes circle {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}/*# sourceMappingURL=main.css.map */
