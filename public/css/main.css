@@ -63,57 +63,6 @@ button {
   font-size: 17px;
   color: #020202;
 }
-#nifty_left .items .head_title {
-  display: flex;
-  align-items: center;
-}
-#nifty_left .items .head_title .tab_marker {
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-}
-#nifty_left .items .head_title .tab_marker span {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  background: #00baab;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-#nifty_left .items .head_title h6 {
-  margin-left: 15px;
-  font-size: 18px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all linear 0.2s;
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-}
-#nifty_left .items .head_title h6:hover {
-  color: #02b0a2;
-}
-#nifty_left .items .items_text {
-  height: 170px;
-  margin-top: 10px;
-}
-#nifty_left .items .items_text p {
-  margin-left: 33px;
-  margin-top: 5px;
-}
-#nifty_left .items .items_text a {
-  margin-left: 33px;
-  margin-top: 20px;
-  color: #00baab;
-}
-#nifty_left .items .items_text a:hover {
-  text-decoration: underline;
-}
 
 #ring .ring {
   height: 560px;
@@ -296,6 +245,8 @@ button {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  animation: rotate 35s linear infinite;
+  -webkit-animation: rotate 35s linear infinite;
 }
 #ring .ring .brand_ring .round_one .round_two .round_three .circle .round_icon img {
   width: 30px;
@@ -362,4 +313,215 @@ button {
     -ms-transform: rotate(360deg) translate(-50%, -50%);
     -o-transform: rotate(360deg) translate(-50%, -50%);
   }
+}
+@-webkit-keyframes rotate {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+  }
+}
+.items {
+  display: grid;
+  grid-template-columns: 22px auto;
+  grid-column-gap: 15px;
+  overflow: hidden;
+}
+.items .items_left {
+  height: 100%;
+  text-align: center;
+}
+.items .items_left span {
+  opacity: 0.5;
+  margin-top: 5px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: #00baab;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+.items .items_left span .dot {
+  height: 4px;
+  width: 4px;
+  top: 45px;
+  left: 3px;
+  position: absolute;
+  z-index: 999;
+  background: #00baab;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+.items .items_left span .dot:nth-child(2) {
+  top: 65px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(3) {
+  top: 85px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(4) {
+  top: 105px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(5) {
+  top: 135px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(6) {
+  top: 155px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(7) {
+  top: 175px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(8) {
+  top: 195px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(9) {
+  top: 215px;
+  opacity: 0.65;
+}
+.items .items_left span .dot:nth-child(10) {
+  top: 235px;
+  opacity: 0.65;
+}
+.items .items_left span::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 25px;
+  height: 4px;
+  width: 4px;
+  background: #00baab;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+.items .items_left .active {
+  background: #00baab;
+  opacity: 1;
+  border: 4px solid #ffffff;
+  width: 18px;
+  height: 18px;
+}
+.items .items_left .active::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 18px;
+  width: 18px;
+  background: none;
+  border: 1px solid #00baab;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+.items .items_right {
+  height: 100%;
+}
+.items .items_right h6 {
+  font-size: 18px;
+  margin-top: -2px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  -ms-transition: all linear 0.1s;
+  -o-transition: all linear 0.1s;
+}
+.items .items_right h6:hover {
+  color: #02b0a2;
+}
+.items .items_right .rigth_text p {
+  margin-top: 0px;
+}
+.items .items_right .rigth_text a {
+  margin-top: 20px;
+  color: #00baab;
+}
+.items .items_right .rigth_text a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */

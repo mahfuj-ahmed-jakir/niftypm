@@ -163,6 +163,10 @@
                   width: 30px;
                   height: 30px;
                 }
+                //animation: circle 35s linear infinite;
+                //-webkit-animation: circle 35s linear infinite;
+                animation: rotate 35s linear infinite;
+                -webkit-animation: rotate 35s linear infinite;
               }
               .round_icon:nth-child(2) {
                 margin-left: 220px;
@@ -222,5 +226,29 @@
     -moz-transform: rotate(360deg) translate(-50%, -50%);
     -ms-transform: rotate(360deg) translate(-50%, -50%);
     -o-transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes rotate {
+  from {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  to {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
   }
 }

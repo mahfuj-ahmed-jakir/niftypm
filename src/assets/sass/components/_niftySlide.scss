@@ -1,0 +1,169 @@
+.items {
+  display: grid;
+  grid-template-columns: 22px auto;
+  grid-column-gap: 15px;
+  overflow: hidden;
+  .items_left {
+    height: 100%;
+    text-align: center;
+    span {
+      opacity: 0.5;
+      margin-top: 5px;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      background: #00baab;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: relative;
+      transition: all linear 0.1s;
+      -webkit-transition: all linear 0.1s;
+      -moz-transition: all linear 0.1s;
+      -ms-transition: all linear 0.1s;
+      -o-transition: all linear 0.1s;
+      .dot {
+        height: 4px;
+        width: 4px;
+        top: 45px;
+        left: 3px;
+        position: absolute;
+        z-index: 999;
+        background: #00baab;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all linear 0.1s;
+        -webkit-transition: all linear 0.1s;
+        -moz-transition: all linear 0.1s;
+        -ms-transition: all linear 0.1s;
+        -o-transition: all linear 0.1s;
+      }
+      .dot:nth-child(2) {
+        top: 65px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(3) {
+        top: 85px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(4) {
+        top: 105px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(5) {
+        top: 125px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(6) {
+        top: 145px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(7) {
+        top: 165px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(8) {
+        top: 185px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(9) {
+        top: 205px;
+        opacity: 0.65;
+      }
+      .dot:nth-child(10) {
+        top: 225px;
+        opacity: 0.65;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 25px;
+        height: 4px;
+        width: 4px;
+        background: #00baab;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transition: all linear 0.1s;
+        -webkit-transition: all linear 0.1s;
+        -moz-transition: all linear 0.1s;
+        -ms-transition: all linear 0.1s;
+        -o-transition: all linear 0.1s;
+      }
+    }
+    .active {
+      background: #00baab;
+      opacity: 1;
+      border: 4px solid #ffffff;
+      width: 18px;
+      height: 18px;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        height: 18px;
+        width: 18px;
+        background: none;
+        border: 1px solid #00baab;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transition: all linear 0.1s;
+        -webkit-transition: all linear 0.1s;
+        -moz-transition: all linear 0.1s;
+        -ms-transition: all linear 0.1s;
+        -o-transition: all linear 0.1s;
+      }
+    }
+  }
+  .items_right {
+    height: 100%;
+    h6 {
+      font-size: 18px;
+      margin-top: -2px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all linear 0.1s;
+      -webkit-transition: all linear 0.1s;
+      -moz-transition: all linear 0.1s;
+      -ms-transition: all linear 0.1s;
+      -o-transition: all linear 0.1s;
+      &:hover {
+        color: #02b0a2;
+      }
+    }
+    .rigth_text {
+      p {
+        margin-top: 0px;
+      }
+      a {
+        margin-top: 20px;
+        color: #00baab;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
