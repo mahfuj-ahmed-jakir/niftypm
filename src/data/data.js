@@ -3,19 +3,25 @@ export let items = [
     title: "Import into Nifty",
     description: "Import from Asana, Basecamp, ClickUp, Jira, Trello, and Wrike — or import your .CSV & Excel sheets to pick up right where you left off.",
     link: "#",
-    linkTitle: "See all imports",
+    linkTitle: "See all imports ❯",
   },
   {
     title: "Native Integrations",
     description: "We integrate with all of your favorite tools to make it easy to push and sync data without disrupting your workflow. Whether you’re in engineering, design, management or sales — we have you covered.",
     link: "#",
-    linkTitle: "See all integrations",
+    linkTitle: "See all integrations ❯",
   },
   {
     title: "Workflow Automations",
     description: "Let Nifty take care of your busy work with custom if/then automations so you can save time & focus on things that really matter.",
     link: "#",
-    linkTitle: "See all automations",
+    linkTitle: "See all automations ❯",
+  },
+  {
+    title: "Custom Embeds",
+    description: "Embed thousands of third party apps and websites across projects, tasks, and docs in Nifty to bring all phases of a project's lifecycle in one place.",
+    link: "#",
+    linkTitle: "See all embeds ❯",
   },
 ];
 

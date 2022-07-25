@@ -419,27 +419,23 @@ button {
   opacity: 0.65;
 }
 .items .items_left span .dot:nth-child(5) {
-  top: 135px;
+  top: 125px;
   opacity: 0.65;
 }
 .items .items_left span .dot:nth-child(6) {
-  top: 155px;
+  top: 145px;
   opacity: 0.65;
 }
 .items .items_left span .dot:nth-child(7) {
-  top: 175px;
+  top: 165px;
   opacity: 0.65;
 }
 .items .items_left span .dot:nth-child(8) {
-  top: 195px;
+  top: 185px;
   opacity: 0.65;
 }
 .items .items_left span .dot:nth-child(9) {
-  top: 215px;
-  opacity: 0.65;
-}
-.items .items_left span .dot:nth-child(10) {
-  top: 235px;
+  top: 205px;
   opacity: 0.65;
 }
 .items .items_left span::before {
@@ -513,7 +509,7 @@ button {
   -o-transition: all linear 0.1s;
 }
 .items .items_right h6:hover {
-  color: #02b0a2;
+  color: #02b0a2 !important;
 }
 .items .items_right .rigth_text p {
   margin-top: 0px;
@@ -524,4 +520,8 @@ button {
 }
 .items .items_right .rigth_text a:hover {
   text-decoration: underline;
+}
+
+.last_child:last-child {
+  height: 30px !important;
 }/*# sourceMappingURL=main.css.map */

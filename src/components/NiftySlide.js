@@ -1,75 +1,77 @@
 import React, { useState } from "react";
+import { items } from "../data/data";
 
-const NiftySlide = ({ title, description, linkTitle, link }) => {
-  let [active, setActive] = useState(false);
+const NiftySlide = () => {
+  let [active, setActive] = useState(0);
 
   return (
     <>
-      <div className="items" style={active ? itemsShow : itemsHide}>
-        <div className="items_left">
-          <span className={active ? "active" : "dotted"}>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-          </span>
-        </div>
-        <div className="items_right">
-          <h6 onClick={() => setActive(!active)} style={{ color: active ? "#00baab" : "#000000" }}>
-            {title}
-          </h6>
-          <div style={active ? rightShow : rightHide} className="rigth_text">
-            <p>{description}</p>
-            <a href={link}>{linkTitle}</a>
+      {items.map((item, index) => (
+        <div key={index} className={active == index ? "items" : "items last_child"} style={active == index ? itemsShow : itemsHide}>
+          <div className="items_left">
+            <span className={active == index ? "active" : "dotted"}>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+            </span>
+          </div>
+          <div className="items_right">
+            <h6 onClick={() => setActive(index)} style={{ color: active == index ? "#00baab" : "#000000" }}>
+              {item.title}
+            </h6>
+            <div style={active == index ? rightShow : rightHide} className="rigth_text">
+              <p>{item.description}</p>
+              <a href={item.link}>{item.linkTitle}</a>
+            </div>
           </div>
         </div>
-      </div>
+      ))}
     </>
   );
 };
 
 let itemsShow = {
-  height: "235px",
+  height: "200px",
   transition: "all linear 0.2s",
-  webkitTransition: "all linear 0.2s",
-  mozTransition: "all linear 0.2s",
+  WebkitTransition: "all linear 0.2s",
+  MozTransition: "all linear 0.2s",
   msTransition: "all linear 0.2s",
-  oTransition: "all linear 0.2s",
+  OTransition: "all linear 0.2s",
 };
 
 let itemsHide = {
   height: "65px",
   transition: "all linear 0.2s",
-  webkitTransition: "all linear 0.2s",
-  mozTransition: "all linear 0.2s",
+  WebkitTransition: "all linear 0.2s",
+  MozTransition: "all linear 0.2s",
   msTransition: "all linear 0.2s",
-  oTransition: "all linear 0.2s",
-  "&:last-child": {
-    height: "25px !important",
+  OTransition: "all linear 0.2s",
+  "&:lastChild": {
+    height: "25px",
   },
 };
 
 let rightShow = {
   marginTop: "12px",
   transition: "all linear 0.2s",
-  webkitTransition: "all linear 0.2s",
-  mozTransition: "all linear 0.2s",
+  WebkitTransition: "all linear 0.2s",
+  MozTransition: "all linear 0.2s",
   msTransition: "all linear 0.2s",
-  oTransition: "all linear 0.2s",
+  OTransition: "all linear 0.2s",
 };
 
 let rightHide = {
   marginTop: "42px",
   transition: "all linear 0.2s",
-  webkitTransition: "all linear 0.2s",
-  mozTransition: "all linear 0.2s",
+  WebkitTransition: "all linear 0.2s",
+  MozTransition: "all linear 0.2s",
   msTransition: "all linear 0.2s",
-  oTransition: "all linear 0.2s",
+  OTransition: "all linear 0.2s",
 };
 
 export default NiftySlide;
