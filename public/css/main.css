@@ -135,7 +135,14 @@ button {
   border: 1px dashed #707070;
   position: relative;
 }
-#ring .ring .brand_ring .round_one .round_two .round_three img {
+#ring .ring .brand_ring .round_one .round_two .round_three picture {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ring .ring .brand_ring .round_one .round_two .round_three picture img {
   height: 50%;
   width: 50%;
 }

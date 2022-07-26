@@ -5,11 +5,11 @@ const NiftySlide = () => {
   let [active, setActive] = useState(0);
 
   return (
-    <>
+    <React.Fragment>
       {items.map((item, index) => (
-        <div key={index} className={active == index ? "items" : "items last_child"} style={active == index ? itemsShow : itemsHide}>
+        <div key={index} className={active === index ? "items" : "items last_child"} style={active === index ? itemsShow : itemsHide}>
           <div className="items_left">
-            <span className={active == index ? "active" : "dotted"}>
+            <span className={active === index ? "active" : "dotted"}>
               <div className="dot"></div>
               <div className="dot"></div>
               <div className="dot"></div>
@@ -20,18 +20,20 @@ const NiftySlide = () => {
               <div className="dot"></div>
             </span>
           </div>
+
           <div className="items_right">
-            <h6 onClick={() => setActive(index)} style={{ color: active == index ? "#00baab" : "#000000" }}>
+            <h6 onClick={() => setActive(index)} style={{ color: active === index ? "#00baab" : "#000000" }}>
               {item.title}
             </h6>
-            <div style={active == index ? rightShow : rightHide} className="rigth_text">
+
+            <div style={active === index ? rightShow : rightHide} className="rigth_text">
               <p>{item.description}</p>
               <a href={item.link}>{item.linkTitle}</a>
             </div>
           </div>
         </div>
       ))}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -3,6 +3,7 @@
   grid-template-columns: 22px auto;
   grid-column-gap: 15px;
   overflow: hidden;
+
   .items_left {
     height: 100%;
     text-align: center;
@@ -24,6 +25,7 @@
       -moz-transition: all linear 0.1s;
       -ms-transition: all linear 0.1s;
       -o-transition: all linear 0.1s;
+
       .dot {
         height: 4px;
         width: 4px;
@@ -43,34 +45,42 @@
         -ms-transition: all linear 0.1s;
         -o-transition: all linear 0.1s;
       }
+
       .dot:nth-child(2) {
         top: 65px;
         opacity: 0.65;
       }
+
       .dot:nth-child(3) {
         top: 85px;
         opacity: 0.65;
       }
+
       .dot:nth-child(4) {
         top: 105px;
         opacity: 0.65;
       }
+
       .dot:nth-child(5) {
         top: 125px;
         opacity: 0.65;
       }
+
       .dot:nth-child(6) {
         top: 145px;
         opacity: 0.65;
       }
+
       .dot:nth-child(7) {
         top: 165px;
         opacity: 0.65;
       }
+
       .dot:nth-child(8) {
         top: 185px;
         opacity: 0.65;
       }
+
       .dot:nth-child(9) {
         top: 205px;
         opacity: 0.65;
@@ -100,6 +110,7 @@
         -o-transition: all linear 0.1s;
       }
     }
+
     .active {
       background: #00baab;
       opacity: 1;
@@ -133,6 +144,7 @@
       }
     }
   }
+
   .items_right {
     height: 100%;
     h6 {
@@ -149,6 +161,7 @@
         color: #02b0a2 !important;
       }
     }
+
     .rigth_text {
       p {
         margin-top: 0px;
@@ -163,6 +176,7 @@
     }
   }
 }
+
 .last_child {
   &:last-child {
     height: 30px !important;

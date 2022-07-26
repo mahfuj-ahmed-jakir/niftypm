@@ -8,6 +8,7 @@ const NiftyLeft = () => {
         <h1>It’s so easy to be efficient</h1>
         <p>Team alignment, productivity, & smarter decisions come naturally when your data is not fragmented across multiple tools.</p>
       </div>
+
       <NiftySlide />
     </div>
   );

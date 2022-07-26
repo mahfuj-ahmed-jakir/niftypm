@@ -11,15 +11,21 @@ const NiftyRight = () => {
               <div className="round_three">
                 <div className="circle">
                   {brand.map((items, index) => (
-                    <div key={index} className="round_icon">
+                    <picture key={index} className="round_icon">
                       <img src={items.img} alt={items.name} />
-                    </div>
+                    </picture>
                   ))}
                 </div>
-                <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="logo" />
+
+                <picture>
+                  <img src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" alt="logo" />
+                </picture>
+
                 {role.map((items, index) => (
                   <div key={index} className="role">
-                    <img src={items.img} alt="icon" />
+                    <picture>
+                      <img src={items.img} alt="icon" />
+                    </picture>
                     <h5>{items.role}</h5>
                   </div>
                 ))}
